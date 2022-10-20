@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sharedstyle.css" />
+    <link rel="stylesheet" href="/adminLogin/styles.css" />
+    <title>Admin-Login</title>
+  </head>
+  <body>
+    <section class="main">
+      <section class="user-login">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="user-login-item user-login-wrapper">
+            <input
+              type="text"
+              name=""
+              formControlName="email"
+              id="email"
+              placeholder="Admin"
+            />
+          </div>
+          <div class="user-login-item login-password-wrapper">
+            <input
+              type="password"
+              name="userpassword"
+              formControlName="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <button class="user-login-item login-submit">Login</button>
+          <div class="line"></div>
+          <p class="admin-login-prompt">
+            Login as User<a routerLink="/login">click here</a>
+          </p>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>

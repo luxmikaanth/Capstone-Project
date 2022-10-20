@@ -1,0 +1,35 @@
+<body>
+  <div class="center">
+    <h1>Citizen Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="mobileNumber"
+          id="mobileNumber"
+          placeholder="Mobile Number"
+        />
+        <span></span>
+        <label for="exampleInputEmail1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="password"
+          class="form-control"
+          formControlName="password"
+          id="password"
+          placeholder="Password"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <input type="submit" name="login" value="Login" />
+      <div class="signup_link">
+        Not a member? <a routerLink="/signup">Signup</a>
+      </div>
+    </form>
+  </div>
+</body>

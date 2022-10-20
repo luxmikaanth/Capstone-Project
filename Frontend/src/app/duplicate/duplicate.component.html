@@ -1,0 +1,35 @@
+<body>
+  <div class="center">
+    <h1>Apply Duplicate AdharCard</h1>
+    <form [formGroup]="duplicateForm" (ngSubmit)="duplicate()">
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="adharCardId"
+          id="adharCardId"
+          placeholder="Enter the AdharCard Id"
+        />
+        <span></span>
+        <label for="exampleInputEmail1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="name"
+          id="name"
+          placeholder="Enter the Name"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <input type="submit" name="apply" value="Apply" />
+      <div class="signup_link">
+        Go back <a routerLink="/userhome">click here</a>
+      </div>
+    </form>
+  </div>
+</body>

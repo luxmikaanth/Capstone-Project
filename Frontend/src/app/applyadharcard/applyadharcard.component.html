@@ -1,0 +1,82 @@
+<body>
+  <div class="center">
+    <h1>Apply New AdharCard</h1>
+    <form [formGroup]="applyForm" (ngSubmit)="Apply()">
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="name"
+          id="name"
+          placeholder="Full Name"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="date"
+          class="form-control"
+          formControlName="dob"
+          id="dob"
+          placeholder="Date of Birth"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="address"
+          id="address"
+          placeholder="Enter your address"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="email"
+          id="email"
+          placeholder="Enter email"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="mobileNumber"
+          id="mobileNumber"
+          placeholder="Mobile Number"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <div class="txt_field">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="gender"
+          id="gender"
+          placeholder="Enter gender"
+        />
+        <span></span>
+        <label for="exampleInputPassword1" class="form-label"></label>
+      </div>
+
+      <input type="submit" name="register" value="Apply" />
+      <div class="signup_link">
+        Go Back<a routerLink="/userhome"> Click to here</a>
+      </div>
+    </form>
+  </div>
+</body>
